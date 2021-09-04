@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import ItemListContainer from './components/ItemListContainer';
+import Navegador from './components/NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Zas Amy E-commerce
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header className='header'>
+          <Navegador/>
       </header>
+      <h1 style={{display: 'flex',justifyContent: 'center', fontFamily:'Playfair Display'}}>Bienvenidos al e-commerce</h1>
+      <section>
+        <ItemListContainer />
+      </section>
     </div>
   );
 }
